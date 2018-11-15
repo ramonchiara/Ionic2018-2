@@ -35,10 +35,13 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">Minha Loja</h1>
       </ion-header-bar>
       <ion-content>
+        <h2>Filtros</h2>
+        <input type="range" min="0" max="10000" value="0" ng-model="min"/>
+        <p>{{min}}</p>
       </ion-content>
     </ion-pane>
   </body>
