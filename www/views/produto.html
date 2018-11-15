@@ -1,0 +1,14 @@
+<ion-view view-title="{{produto.nome}}">
+    <ion-content>
+        <div class="card">
+            <div class="item item-body">
+                <img ng-src="https://picsum.photos/200/200/?image={{produto.id}}" alt="Nome do Produto" class="full-image"/>
+                <p><strong>Preço:</strong> {{produto.preco| currency}}</p>
+            </div>
+            <a class="item item-icon-left assertive">
+                <i class="icon ion-bag"></i>
+                Comprar
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

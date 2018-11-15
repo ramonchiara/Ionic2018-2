@@ -1,0 +1,15 @@
+<ion-view view-title="Produtos">
+    <ion-nav-buttons side="primary">
+      <button class="button button-icon icon ion-navicon" ng-click="filtros()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="p in produtos| filter: minmax as listaFiltrada" ui-sref="produto({id: {{p.id}}})">
+                {{p.nome}}
+            </ion-item>
+            <ion-item ng-if="listaFiltrada.length === 0" class="alert alert-warning" role="alert">
+                Nenhum produto encontrado!
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
